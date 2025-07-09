@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>平面方程可视化</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+        }
+        .container {
+            background-color: rgba(0,0,0,0.7);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 800px;
+        }
+        video {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+        }
+        h1 {
+            margin-bottom: 10px;
+        }
+        p {
+            margin-top: 5px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>三维平面方程可视化</h1>
+        <p>x + 2y + z = 2</p>
+        <p>x - z = 0</p>
+        <video controls autoplay muted>
+            <source src="Figure1.6.1.mp4" type="video/mp4">
+            您的浏览器不支持视频标签。
+        </video>
+        <p>使用 Manim 数学动画引擎创建</p>
+    </div>
+</body>
+</html>
